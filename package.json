@@ -1,0 +1,68 @@
+{
+  "name": "startd-theme",
+  "description": "A TypeScript/Next.js theme that includes everything you need to build amazing landing page!",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Jaakko Kytölä <kytola.jaakko@gmail.com> (jaakkokytola.com)",
+  "license": "MIT",
+  "keywords": [
+    "nextjs",
+    "starter",
+    "typescript",
+    "tailwind",
+    "theme"
+  ],
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc",
+    "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
+    "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write"
+  },
+  "lint-staged": {
+    "./src/**/*.{ts,js,jsx,tsx}": [
+      "yarn lint --fix",
+      "yarn format"
+    ]
+  },
+  "dependencies": {
+    "@fontsource/inter": "4.2.1",
+    "@supabase/supabase-js": "2.2.2",
+    "@svgr/webpack": "6.5.1",
+    "@vercel/analytics": "0.1.6",
+    "@web3modal/ethereum": "2.0.0-rc.1",
+    "@web3modal/react": "2.0.0-rc.1",
+    "emailjs-com": "3.2.0",
+    "ethers": "5.7.2",
+    "next": "13.0.6",
+    "next-seo": "4.29.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "7.41.1",
+    "react-particles-js": "3.4.1",
+    "spinners-react": "1.0.7",
+    "twind": "0.15.4",
+    "wagmi": "0.9.5"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "11.0.0",
+    "@commitlint/config-conventional": "11.0.0",
+    "@types/node": "14.14.28",
+    "@types/react": "17.0.2",
+    "@types/react-dom": "17.0.1",
+    "@typescript-eslint/eslint-plugin": "4.15.1",
+    "@typescript-eslint/parser": "4.15.1",
+    "commitizen": "4.2.6",
+    "eslint": "7.20.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-import-resolver-typescript": "2.4.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-react": "7.22.0",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "lint-staged": "10.5.4",
+    "prettier": "2.2.1",
+    "typescript": "4.9.4"
+  }
+}
