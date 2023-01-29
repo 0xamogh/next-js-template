@@ -1,7 +1,6 @@
 import { tw } from 'twind';
 import { useState } from 'react';
 import Button from '@/components/button';
-import { Web3Button } from '@web3modal/react';
 import Link from 'next/link';
 import { ContractsLink } from '@/constants/constants';
 
@@ -157,7 +156,6 @@ const Navigation = ({isApp} : INavigation) => {
               {/* <Button modifier="border-0 mr-2">Contact sales</Button>
               <Button modifier="border-0 mr-2">Log in</Button> */}
               
-              {isApp && <Web3Button icon={'hide'} balance={'show'}/>}  
               {!isApp && <a target='_blank' rel="noopener noreferrer" href={ContractsLink}><Button modifier="border-0 mr-2">Contracts ↗</Button></a>}
               {!isApp && <Link href={"/app"}><Button primary >Try our Polygon beta</Button></Link>}
             </div>

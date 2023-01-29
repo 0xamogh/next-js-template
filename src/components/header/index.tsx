@@ -3,8 +3,7 @@ import Uniswap from '@/constants/svg/uniswap.svg';
 import Gelato from '@/constants/svg/gelato.svg';
 import Link from 'next/link';
 import Button from '../button'
-import { Web3Button } from '@web3modal/react';
-import { useAccount } from 'wagmi';
+
 import { buttonBaseStyle } from '@/styles/styles';
 import {supabase} from '@/utils/supabase'
 const headerStyle = css`
@@ -13,8 +12,7 @@ const headerStyle = css`
 `;
 
 export default function Header(){
-    const { address, isConnected } = useAccount()
-  console.log("🚀 ~ file: index.tsx:32 ~ Home ~ address", address, isConnected)
+
   return (<header className={tw(headerStyle)}>
     <div className={tw(`max-w-4xl mx-auto py-16 px-14 sm:px-6 lg:px-8`)}>
       <h1 className={tw(`font-sans font-bold text-4xl md:text-5xl lg:text-6xl text-center leading-snug text-gray-800`)}>
